@@ -1,6 +1,6 @@
 # FALCON
 
-Failure-Aware LLM-Guided Curriculum Optimization for Robust Multi-UAV Decision Making.
+Failure-Aware LLM-guided Curriculum OptimizatioN for Robust Multi-Agent Reinforcement Learning.
 
 FALCON is an outer-loop curriculum optimization framework for multi-UAV reinforcement learning. It records failed rollouts, extracts structured failure summaries, asks an LLM to generate counterfactual curriculum scenarios, validates the generated scenarios through an executable scenario interface, and filters high-value curricula with a dual-boundary difficulty evaluator before MAPPO training.
 
