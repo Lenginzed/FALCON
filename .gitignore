@@ -221,6 +221,10 @@ experiments/**/ablation_no_dual_boundary_3seed/
 *.mp4
 *.avi
 
+# README figures kept in the source release
+!docs/figures/
+!docs/figures/falcon_system_overview.png
+
 # IDE / OS
 .vscode/
 .idea/
