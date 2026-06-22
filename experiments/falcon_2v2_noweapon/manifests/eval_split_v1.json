@@ -1,0 +1,57 @@
+{
+  "created_at": "2026-06-06T01:05:19+0800",
+  "fixed_across_groups_and_seeds": true,
+  "overlap_scenario_ids": [],
+  "schema_version": "falcon.eval_split.v1",
+  "source_manifest": "E:\\Lenginzed\\FALCON-CL\\experiments\\falcon_2v2_noweapon\\manifests\\eval_scenarios.json",
+  "split_id": "eval_split_v1",
+  "test": {
+    "manifest_path": "E:\\Lenginzed\\FALCON-CL\\experiments\\falcon_2v2_noweapon\\manifests\\eval_split_v1_test.json",
+    "scenario_count": 13,
+    "scenario_group_counts": {
+      "hard_random": 3,
+      "qwen_pilot": 3,
+      "random": 3,
+      "replay_failure": 4
+    },
+    "scenario_ids": [
+      "random_001",
+      "random_002",
+      "random_004",
+      "hard_random_001",
+      "hard_random_002",
+      "hard_random_004",
+      "qwen_pilot_001",
+      "qwen_pilot_002",
+      "qwen_pilot_003",
+      "replay_failure_001",
+      "replay_failure_002",
+      "replay_failure_003",
+      "replay_failure_004"
+    ]
+  },
+  "validation": {
+    "manifest_path": "E:\\Lenginzed\\FALCON-CL\\experiments\\falcon_2v2_noweapon\\manifests\\eval_split_v1_validation.json",
+    "scenario_count": 8,
+    "scenario_group_counts": {
+      "base": 1,
+      "hard_random": 2,
+      "qwen_pilot": 2,
+      "random": 2,
+      "replay_failure": 1
+    },
+    "scenario_ids": [
+      "base_000",
+      "random_000",
+      "random_003",
+      "hard_random_000",
+      "hard_random_003",
+      "qwen_pilot_000",
+      "qwen_pilot_004",
+      "replay_failure_000"
+    ]
+  },
+  "warnings": [
+    "Only one base scenario exists; it is assigned to validation, so held-out test has no base scenario."
+  ]
+}

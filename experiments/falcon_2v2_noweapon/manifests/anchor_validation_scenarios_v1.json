@@ -1,0 +1,37 @@
+{
+  "schema_version": "falcon.anchor_validation_manifest.v1",
+  "manifest_id": "anchor_validation_scenarios_v1",
+  "scenario_count": 4,
+  "held_out_from_training": true,
+  "selection_only": true,
+  "fixed_across_rounds": true,
+  "fixed_opponent_required": true,
+  "episodes_per_scenario": 1,
+  "source_manifest": "experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2.json",
+  "scenarios": [
+    {
+      "scenario_id": "base_2v2_noweapon_selfplay",
+      "scenario_group": "base",
+      "difficulty_intent": "base anchor retention",
+      "scenario_yaml_path": "envs/JSBSim/configs/2v2/NoWeapon/Selfplay.yaml"
+    },
+    {
+      "scenario_id": "hard_initial_disadvantage_000",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "difficulty_intent": "initial disadvantage retention",
+      "scenario_yaml_path": "experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2/hard_initial_disadvantage_000.yaml"
+    },
+    {
+      "scenario_id": "hard_coordination_stress_000",
+      "scenario_group": "hard_coordination_stress",
+      "difficulty_intent": "coordination retention",
+      "scenario_yaml_path": "experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2/hard_coordination_stress_000.yaml"
+    },
+    {
+      "scenario_id": "hard_target_assignment_stress_000",
+      "scenario_group": "hard_target_assignment_stress",
+      "difficulty_intent": "target assignment retention",
+      "scenario_yaml_path": "experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2/hard_target_assignment_stress_000.yaml"
+    }
+  ]
+}

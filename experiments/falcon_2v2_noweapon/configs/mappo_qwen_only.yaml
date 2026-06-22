@@ -1,0 +1,17 @@
+schema_version: falcon.baseline_group_config.v1
+group: mappo_qwen_only
+description: MAPPO with qwen3:8b legal scenario generation from a generic task context, without failure analysis, policy filtering, or dual-boundary difficulty filtering.
+candidate_generator: qwen3:8b
+failure_analyzer: false
+failure_aware_generation: false
+constraint_checker: true
+policy_evaluator: false
+policy_evaluator_used_for_filtering: false
+difficulty_evaluator: false
+curriculum_pool: true
+curriculum_scheduler: true
+acceptance_rule: constraint_valid_only
+qwen_enabled: true
+fsn_enabled: false
+training_scenario_mode: qwen_validity_curriculum
+final_evaluation_on_shared_set: true

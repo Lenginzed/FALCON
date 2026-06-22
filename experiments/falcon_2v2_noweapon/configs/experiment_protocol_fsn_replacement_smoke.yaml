@@ -1,0 +1,29 @@
+schema_version: falcon.fsn_replacement_smoke_protocol.v1
+group: falcon_fsn_25
+seed: 4
+environment: 2v2/NoWeapon/Selfplay
+max_rounds: 5
+train_steps_per_round: 64
+eval_episodes_per_round: 1
+policy_eval_episodes_per_candidate: 1
+output_dir: experiments/falcon_2v2_noweapon/results_fsn_replacement_smoke/falcon_fsn_25/seed_4
+fsn_replacement:
+  enabled: true
+  fsn_model_path: experiments/falcon_2v2_noweapon/fsn/stage2/fsn_stage2_model.pt
+  replacement_ratio: 0.25
+  use_diversity_aware_fsn: true
+  qwen_ratio: 0.75
+  fsn_candidates_per_round: 1
+  qwen_candidates_per_round: 3
+  total_candidates_per_round: 4
+  fallback_to_qwen_if_fsn_invalid: true
+  record_generator_source: true
+evaluation:
+  opponent_mode: fixed_checkpoint
+  opponent_checkpoint: experiments/falcon_2v2_noweapon/opponents/fixed_baseline_opponent/candidate_seed999_steps2048/checkpoints/actor_seed999_steps2048.pt
+  hard_eval_manifest: experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2.json
+  hard_eval_scenario_limit: 5
+  hard_eval_episodes_per_scenario: 1
+notes:
+  - Controlled replacement smoke only; not a policy-performance experiment.
+  - The failure fixture is reused to isolate generator replacement behavior.

@@ -1,0 +1,100 @@
+schema_version: falcon.baseline_experiment_protocol.v1
+protocol_name: falcon_2v2_noweapon_baseline
+status: evaluation_protocol_frozen_for_baseline_preparation
+environment: 2v2/NoWeapon/Selfplay
+environment_name: MultipleCombat
+task_name: MultiCombat NoWeapon
+base_scenario_config: envs/JSBSim/configs/2v2/NoWeapon/Selfplay.yaml
+algorithm: MAPPO
+max_rounds: 20
+train_steps_per_round: 512
+eval_episodes_per_round: 5
+policy_eval_episodes_per_candidate: 3
+qwen_candidates_per_round: 4
+random_candidates_per_round: 4
+checkpoint_save_interval: 1
+seeds:
+- 0
+planned_formal_seeds:
+- 0
+- 1
+- 2
+- 3
+- 4
+output_root: experiments/falcon_2v2_noweapon/results
+evaluation_scenarios: experiments/falcon_2v2_noweapon/manifests/eval_scenarios.json
+evaluation:
+  protocol_version: falcon.fixed_opponent_eval.v1
+  opponent_mode: fixed_checkpoint
+  opponent_checkpoint: experiments\falcon_2v2_noweapon\opponents\fixed_baseline_opponent\candidate_seed999_steps2048\checkpoints\actor_seed999_steps2048.pt
+  opponent_manifest: experiments\falcon_2v2_noweapon\manifests\eval_opponent.json
+  agent_team: A
+  opponent_team: B
+  deterministic: true
+  same_actor_allowed: false
+  eval_scenarios: experiments/falcon_2v2_noweapon/manifests/eval_scenarios.json
+  episodes_per_scenario: 3
+  checkpoint_selection: best
+  metrics:
+  - win_rate
+  - mean_return
+  - scenario_group_breakdown
+llm:
+  provider: ollama
+  provider_mode: ollama_native
+  model_name: qwen3:8b
+  think: false
+  stream: false
+  temperature: 0.1
+  top_p: 0.8
+  max_tokens: 4096
+  timeout: 180
+metrics:
+  training:
+  - round_win_rate
+  - best_win_rate
+  - mean_return
+  - accepted_rate
+  - fallback_rate
+  - checkpoint_count
+  - qwen_failure_count
+  - policy_eval_failure_count
+  final_evaluation:
+  - final_win_rate_on_eval_set
+  - best_win_rate_on_eval_set
+  - mean_return_on_eval_set
+  - sample_efficiency
+  - robustness
+  - curriculum_efficiency
+  - llm_cost
+metric_definitions:
+  sample_efficiency: environment steps required to reach sample_efficiency_target_win_rate
+  robustness: win rate reported separately for each fixed evaluation scenario group
+  curriculum_efficiency: accepted curriculum scenarios divided by generated candidate
+    scenarios
+  llm_cost: qwen calls divided by accepted qwen scenarios
+sample_efficiency_target_win_rate: 0.6
+accepted_rate_alert_threshold: 0.15
+fallback_rate_alert_threshold: 0.3
+longest_no_accepted_alert_threshold: 3
+group_configs:
+  mappo_base: experiments/falcon_2v2_noweapon/configs/mappo_base.yaml
+  mappo_random_curriculum: experiments/falcon_2v2_noweapon/configs/mappo_random_curriculum.yaml
+  mappo_qwen_only: experiments/falcon_2v2_noweapon/configs/mappo_qwen_only.yaml
+  falcon_no_fsn: experiments/falcon_2v2_noweapon/configs/falcon_no_fsn.yaml
+smoke:
+  max_rounds: 1
+  train_steps_per_round: 8
+  eval_episodes_per_round: 1
+  policy_eval_episodes_per_candidate: 1
+  qwen_candidates_per_round: 1
+  random_candidates_per_round: 1
+  evaluation_scenario_limit: 1
+pilot:
+  max_rounds: 2
+  train_steps_per_round: 32
+  eval_episodes_per_round: 1
+  policy_eval_episodes_per_candidate: 1
+  qwen_candidates_per_round: 1
+  random_candidates_per_round: 1
+  evaluation_scenario_limit: 3

@@ -1,0 +1,17 @@
+schema_version: falcon.baseline_group_config.v1
+group: falcon_no_fsn
+description: Full failure-aware Qwen curriculum with dual-boundary filtering, excluding FSN.
+candidate_generator: qwen3:8b
+failure_analyzer: true
+failure_aware_generation: true
+constraint_checker: true
+policy_evaluator: true
+policy_evaluator_used_for_filtering: true
+difficulty_evaluator: dual_boundary
+curriculum_pool: true
+curriculum_scheduler: true
+acceptance_rule: dual_boundary_hard_filter
+qwen_enabled: true
+fsn_enabled: false
+training_scenario_mode: falcon_curriculum
+final_evaluation_on_shared_set: true

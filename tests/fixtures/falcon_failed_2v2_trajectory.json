@@ -1,0 +1,152 @@
+{
+  "schema_version": "falcon.multi_combat_trajectory.v1",
+  "env": {
+    "agent_order": ["A0100", "A0200", "B0100", "B0200"],
+    "ego_ids": ["A0100", "A0200"],
+    "enm_ids": ["B0100", "B0200"],
+    "max_steps": 1000,
+    "time_interval": 0.2
+  },
+  "initial_scenario_config": {
+    "config_name": "2v2/NoWeapon/HierarchySelfplay",
+    "aircraft_configs": {
+      "A0100": {"init_state": {"ic_h_sl_ft": 20000, "ic_u_fps": 800}},
+      "A0200": {"init_state": {"ic_h_sl_ft": 20000, "ic_u_fps": 800}},
+      "B0100": {"init_state": {"ic_h_sl_ft": 23000, "ic_u_fps": 900}},
+      "B0200": {"init_state": {"ic_h_sl_ft": 23000, "ic_u_fps": 900}}
+    }
+  },
+  "outcome": {
+    "winner": "B",
+    "ego_team": "A",
+    "enemy_team": "B",
+    "ego_failed": true,
+    "final_step": 2
+  },
+  "steps": [
+    {
+      "timestep": 0,
+      "agents": {
+        "A0100": {
+          "alive": true,
+          "heading_rad": 0.0,
+          "altitude_m": 6096.0,
+          "position_neu_m": {"north": 0.0, "east": 0.0, "up": 6096.0},
+          "velocity_neu_mps": {"north": 240.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        },
+        "A0200": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 6096.0,
+          "position_neu_m": {"north": 0.0, "east": 10000.0, "up": 6096.0},
+          "velocity_neu_mps": {"north": -240.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        },
+        "B0100": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 7010.4,
+          "position_neu_m": {"north": 1000.0, "east": 1000.0, "up": 7010.4},
+          "velocity_neu_mps": {"north": -270.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        },
+        "B0200": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 7010.4,
+          "position_neu_m": {"north": 1000.0, "east": 11000.0, "up": 7010.4},
+          "velocity_neu_mps": {"north": -270.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        }
+      },
+      "rewards": null,
+      "dones": null,
+      "info": {}
+    },
+    {
+      "timestep": 1,
+      "agents": {
+        "A0100": {
+          "alive": true,
+          "heading_rad": 0.0,
+          "altitude_m": 5700.0,
+          "position_neu_m": {"north": 200.0, "east": 0.0, "up": 5700.0},
+          "velocity_neu_mps": {"north": 240.0, "east": 0.0, "up": -20.0},
+          "constraint_flags": {}
+        },
+        "A0200": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 5700.0,
+          "position_neu_m": {"north": -200.0, "east": 10000.0, "up": 5700.0},
+          "velocity_neu_mps": {"north": -240.0, "east": 0.0, "up": -20.0},
+          "constraint_flags": {}
+        },
+        "B0100": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 7000.0,
+          "position_neu_m": {"north": 800.0, "east": 1000.0, "up": 7000.0},
+          "velocity_neu_mps": {"north": -270.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        },
+        "B0200": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 7000.0,
+          "position_neu_m": {"north": 800.0, "east": 11000.0, "up": 7000.0},
+          "velocity_neu_mps": {"north": -270.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        }
+      },
+      "rewards": {"A0100": -20.0, "A0200": -20.0, "B0100": 20.0, "B0200": 20.0},
+      "dones": {"A0100": false, "A0200": false, "B0100": false, "B0200": false},
+      "info": {"current_step": 1}
+    },
+    {
+      "timestep": 2,
+      "agents": {
+        "A0100": {
+          "alive": false,
+          "crash": true,
+          "shotdown": false,
+          "heading_rad": 0.0,
+          "altitude_m": 2400.0,
+          "position_neu_m": {"north": 250.0, "east": 0.0, "up": 2400.0},
+          "velocity_neu_mps": {"north": 220.0, "east": 0.0, "up": -80.0},
+          "constraint_flags": {"low_altitude": true, "crash": true}
+        },
+        "A0200": {
+          "alive": false,
+          "crash": false,
+          "shotdown": true,
+          "heading_rad": 3.14,
+          "altitude_m": 5200.0,
+          "position_neu_m": {"north": -250.0, "east": 10000.0, "up": 5200.0},
+          "velocity_neu_mps": {"north": -240.0, "east": 0.0, "up": -20.0},
+          "constraint_flags": {"shotdown": true}
+        },
+        "B0100": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 7000.0,
+          "position_neu_m": {"north": 700.0, "east": 1000.0, "up": 7000.0},
+          "velocity_neu_mps": {"north": -270.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        },
+        "B0200": {
+          "alive": true,
+          "heading_rad": 3.14,
+          "altitude_m": 7000.0,
+          "position_neu_m": {"north": 700.0, "east": 11000.0, "up": 7000.0},
+          "velocity_neu_mps": {"north": -270.0, "east": 0.0, "up": 0.0},
+          "constraint_flags": {}
+        }
+      },
+      "rewards": {"A0100": -220.0, "A0200": -220.0, "B0100": 220.0, "B0200": 220.0},
+      "dones": {"A0100": true, "A0200": true, "B0100": true, "B0200": true},
+      "info": {"current_step": 2}
+    }
+  ]
+}

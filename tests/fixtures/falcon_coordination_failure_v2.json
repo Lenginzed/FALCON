@@ -1,0 +1,101 @@
+{
+  "schema_version": "falcon.multi_combat_trajectory.v2",
+  "episode_id": "fixture_coordination_failure",
+  "env_name": "MultipleCombat",
+  "scenario_type": "2v2",
+  "task_name": "MultiCombat NoWeapon",
+  "config_path": "envs/JSBSim/configs/2v2/NoWeapon/Selfplay.yaml",
+  "timestamp": "2026-06-04T00:00:00Z",
+  "random_seed": 1,
+  "policy_id": "fixture_policy",
+  "training_steps": 0,
+  "save_reason": "failure",
+  "episode_result": "crash",
+  "done_reason": "crash",
+  "total_team_reward": {"own": -600.0, "opponent": 400.0},
+  "episode_length": 2,
+  "env": {
+    "env_name": "MultipleCombat",
+    "scenario_type": "2v2",
+    "task_name": "MultiCombat NoWeapon",
+    "agent_order": ["A0100", "A0200", "B0100", "B0200"],
+    "ego_ids": ["A0100", "A0200"],
+    "enm_ids": ["B0100", "B0200"],
+    "max_steps": 1000
+  },
+  "initial_config": {
+    "schema_version": "falcon.initial_config.v1",
+    "agents": [
+      {"agent_id": "A0100", "team": "red", "initial_latitude": 60.0, "initial_longitude": 120.0, "initial_altitude": 6000.0, "initial_position_neu": [0.0, 0.0, 6000.0], "initial_velocity": [240.0, 0.0, 0.0], "initial_heading": 0.0, "initial_roll": 0.0, "initial_pitch": 0.0, "alive": true, "blood": 100.0, "missile_count": 0},
+      {"agent_id": "A0200", "team": "red", "initial_latitude": 60.0, "initial_longitude": 120.1, "initial_altitude": 6000.0, "initial_position_neu": [0.0, 12000.0, 6000.0], "initial_velocity": [240.0, 0.0, 0.0], "initial_heading": 0.0, "initial_roll": 0.0, "initial_pitch": 0.0, "alive": true, "blood": 100.0, "missile_count": 0},
+      {"agent_id": "B0100", "team": "blue", "initial_latitude": 60.05, "initial_longitude": 120.05, "initial_altitude": 6000.0, "initial_position_neu": [3000.0, 6000.0, 6000.0], "initial_velocity": [-240.0, 0.0, 0.0], "initial_heading": 3.14159, "initial_roll": 0.0, "initial_pitch": 0.0, "alive": true, "blood": 100.0, "missile_count": 0},
+      {"agent_id": "B0200", "team": "blue", "initial_latitude": 60.2, "initial_longitude": 120.2, "initial_altitude": 6000.0, "initial_position_neu": [20000.0, 20000.0, 6000.0], "initial_velocity": [-240.0, 0.0, 0.0], "initial_heading": 3.14159, "initial_roll": 0.0, "initial_pitch": 0.0, "alive": true, "blood": 100.0, "missile_count": 0}
+    ],
+    "scenario_vector": {
+      "team_center_distance": 12529.964086,
+      "own_formation_spread": 12000.0,
+      "opponent_formation_spread": 22022.715545,
+      "altitude_difference": 0.0,
+      "velocity_difference": 0.0,
+      "heading_difference": 3.14159,
+      "approximate_aspect_angle": 0.785398,
+      "own_center_x": 0.0,
+      "own_center_y": 6000.0,
+      "own_center_z": 6000.0,
+      "opponent_center_x": 11500.0,
+      "opponent_center_y": 13000.0,
+      "opponent_center_z": 6000.0
+    },
+    "missing_fields": []
+  },
+  "frames": [
+    {
+      "timestep": 0,
+      "sim_time_sec": 0.0,
+      "info": {},
+      "agents": {
+        "A0100": {"agent_id": "A0100", "team": "red", "position_neu": [0.0, 0.0, 6000.0], "latitude": 60.0, "longitude": 120.0, "altitude": 6000.0, "velocity_neu": [240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 0.0, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 0.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 0.0},
+        "A0200": {"agent_id": "A0200", "team": "red", "position_neu": [0.0, 12000.0, 6000.0], "latitude": 60.0, "longitude": 120.1, "altitude": 6000.0, "velocity_neu": [240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 0.0, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 0.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 12000.0},
+        "B0100": {"agent_id": "B0100", "team": "blue", "position_neu": [3000.0, 6000.0, 6000.0], "latitude": 60.05, "longitude": 120.05, "altitude": 6000.0, "velocity_neu": [-240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 3.14159, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 0.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 6708.203932},
+        "B0200": {"agent_id": "B0200", "team": "blue", "position_neu": [20000.0, 20000.0, 6000.0], "latitude": 60.2, "longitude": 120.2, "altitude": 6000.0, "velocity_neu": [-240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 3.14159, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 0.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 28284.271247}
+      }
+    },
+    {
+      "timestep": 1,
+      "sim_time_sec": 0.2,
+      "info": {},
+      "agents": {
+        "A0100": {"agent_id": "A0100", "team": "red", "position_neu": [200.0, 0.0, 5900.0], "latitude": 60.0, "longitude": 120.0, "altitude": 5900.0, "velocity_neu": [240.0, 0.0, -10.0], "speed": 240.208243, "airspeed": 240.208243, "heading": 0.0, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": -100.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 60.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 200.0},
+        "A0200": {"agent_id": "A0200", "team": "red", "position_neu": [200.0, 12000.0, 5900.0], "latitude": 60.0, "longitude": 120.1, "altitude": 5900.0, "velocity_neu": [240.0, 0.0, -10.0], "speed": 240.208243, "airspeed": 240.208243, "heading": 0.0, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": -100.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 60.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 12001.666551},
+        "B0100": {"agent_id": "B0100", "team": "blue", "position_neu": [2800.0, 6000.0, 6000.0], "latitude": 60.05, "longitude": 120.05, "altitude": 6000.0, "velocity_neu": [-240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 3.14159, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 100.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 6621.178142},
+        "B0200": {"agent_id": "B0200", "team": "blue", "position_neu": [19800.0, 20000.0, 6000.0], "latitude": 60.2, "longitude": 120.2, "altitude": 6000.0, "velocity_neu": [-240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 3.14159, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 100.0, "done": false, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 28143.916572}
+      }
+    },
+    {
+      "timestep": 2,
+      "sim_time_sec": 0.4,
+      "info": {"done_reason": "crash"},
+      "agents": {
+        "A0100": {"agent_id": "A0100", "team": "red", "position_neu": [300.0, 0.0, 2400.0], "latitude": 60.0, "longitude": 120.0, "altitude": 2400.0, "velocity_neu": [220.0, 0.0, -80.0], "speed": 234.093998, "airspeed": 234.093998, "heading": 0.0, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": -200.0, "done": true, "info": {"done_reason": "crash"}, "alive": false, "crash": true, "shotdown": false, "blood": 0.0, "missile_count": 0, "low_altitude": true, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 300.0},
+        "A0200": {"agent_id": "A0200", "team": "red", "position_neu": [300.0, 12000.0, 2400.0], "latitude": 60.0, "longitude": 120.1, "altitude": 2400.0, "velocity_neu": [220.0, 0.0, -80.0], "speed": 234.093998, "airspeed": 234.093998, "heading": 0.0, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": -200.0, "done": true, "info": {"done_reason": "crash"}, "alive": false, "crash": true, "shotdown": false, "blood": 0.0, "missile_count": 0, "low_altitude": true, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 12003.749414},
+        "B0100": {"agent_id": "B0100", "team": "blue", "position_neu": [2700.0, 6000.0, 6000.0], "latitude": 60.05, "longitude": 120.05, "altitude": 6000.0, "velocity_neu": [-240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 3.14159, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 200.0, "done": true, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 6579.51366},
+        "B0200": {"agent_id": "B0200", "team": "blue", "position_neu": [19700.0, 20000.0, 6000.0], "latitude": 60.2, "longitude": 120.2, "altitude": 6000.0, "velocity_neu": [-240.0, 0.0, 0.0], "speed": 240.0, "airspeed": 240.0, "heading": 3.14159, "roll": 0.0, "pitch": 0.0, "action": [20, 20, 20, 0], "reward": 200.0, "done": true, "info": {}, "alive": true, "crash": false, "shotdown": false, "blood": 100.0, "missile_count": 0, "low_altitude": false, "overload": false, "extreme_state": false, "horizontal_distance_from_center_m": 28073.119883}
+      }
+    }
+  ],
+  "episode_summary": {
+    "schema_version": "falcon.episode_summary.v1",
+    "episode_length": 2,
+    "total_team_reward": {"own": -600.0, "opponent": 600.0},
+    "first_failure_timestep": 2,
+    "final_outcome": "crash",
+    "crash_count": 2,
+    "shotdown_count": 0,
+    "alive_ratio_over_episode": 0.833333,
+    "own_teammate_distance": {"min": 12000.0, "mean": 12000.0, "max": 12000.0},
+    "team_center_distance": {"min": 12456.0, "mean": 12500.0, "max": 12530.0},
+    "own_blood": {"min": 0.0, "mean": 53.333333, "max": 100.0}
+  },
+  "missing_fields": [],
+  "warnings": []
+}

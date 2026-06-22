@@ -1,0 +1,16 @@
+torch
+numpy
+scipy
+pandas
+matplotlib
+PyYAML
+requests
+tqdm
+gym==0.20.0
+jsbsim==1.1.6
+pymap3d
+geographiclib
+wandb
+icecream
+setproctitle
+scikit-learn

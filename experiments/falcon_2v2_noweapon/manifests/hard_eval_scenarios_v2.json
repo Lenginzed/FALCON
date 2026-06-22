@@ -1,0 +1,3180 @@
+{
+  "base_config_path": "envs\\JSBSim\\configs\\2v2\\NoWeapon\\Selfplay.yaml",
+  "created_at": "2026-06-06T01:47:41+0800",
+  "environment": "2v2/NoWeapon/Selfplay",
+  "fixed_opponent_required": true,
+  "held_out_from_training": true,
+  "invalid_attempts": [],
+  "scenario_count": 40,
+  "scenario_group_counts": {
+    "hard_coordination_stress": 10,
+    "hard_random_initial_disadvantage": 10,
+    "hard_target_assignment_stress": 10,
+    "replay_failure_variants": 10
+  },
+  "scenarios": [
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_000",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_000",
+      "scenario_vector": {
+        "altitude_difference": 1300.0,
+        "approximate_aspect_angle": 2.3291913303193,
+        "heading_difference": 0.25,
+        "opponent_center_x": -4356.821075996034,
+        "opponent_center_y": 4689.122103914774,
+        "opponent_center_z": 7396.0,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 1800.0,
+        "team_center_distance": 6334.824385884742,
+        "velocity_difference": 36.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_000.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_001",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_001",
+      "scenario_vector": {
+        "altitude_difference": 1480.0,
+        "approximate_aspect_angle": 2.4496475251378054,
+        "heading_difference": 0.3700000000000001,
+        "opponent_center_x": -5223.2776266594965,
+        "opponent_center_y": 4345.144903285351,
+        "opponent_center_z": 7576.0,
+        "opponent_formation_spread": 1450.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2150.0,
+        "team_center_distance": 6783.4209658549125,
+        "velocity_difference": 40.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_001.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_002",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_002",
+      "scenario_vector": {
+        "altitude_difference": 1660.0,
+        "approximate_aspect_angle": 2.5662254397424875,
+        "heading_difference": 0.4900000000000002,
+        "opponent_center_x": -6068.485893114049,
+        "opponent_center_y": 3846.6115564378324,
+        "opponent_center_z": 7756.0,
+        "opponent_formation_spread": 1699.9999999999995,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2500.0,
+        "team_center_distance": 7233.0629749781665,
+        "velocity_difference": 44.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_002.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_003",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_003",
+      "scenario_vector": {
+        "altitude_difference": 1840.0,
+        "approximate_aspect_angle": 2.6762276040249477,
+        "heading_difference": 0.6099999999999999,
+        "opponent_center_x": -6866.479547206336,
+        "opponent_center_y": 3193.987767193992,
+        "opponent_center_z": 7936.0,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2850.0,
+        "team_center_distance": 7683.566880036901,
+        "velocity_difference": 48.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_003.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_004",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_004",
+      "scenario_vector": {
+        "altitude_difference": 1300.0,
+        "approximate_aspect_angle": 2.825627882665894,
+        "heading_difference": 0.73,
+        "opponent_center_x": -7591.157523916997,
+        "opponent_center_y": 2391.923797936928,
+        "opponent_center_z": 7396.0,
+        "opponent_formation_spread": 1450.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 1800.0,
+        "team_center_distance": 7986.513632368006,
+        "velocity_difference": 52.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_004.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_005",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_005",
+      "scenario_vector": {
+        "altitude_difference": 1480.0,
+        "approximate_aspect_angle": 2.3347765881408042,
+        "heading_difference": 0.25,
+        "opponent_center_x": -5832.518537220497,
+        "opponent_center_y": 6183.216144775547,
+        "opponent_center_z": 7576.0,
+        "opponent_formation_spread": 1700.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2150.0,
+        "team_center_distance": 8430.919285582087,
+        "velocity_difference": 36.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_005.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_006",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_006",
+      "scenario_vector": {
+        "altitude_difference": 1660.0,
+        "approximate_aspect_angle": 2.457662032715217,
+        "heading_difference": 0.3700000000000001,
+        "opponent_center_x": -6880.208595841512,
+        "opponent_center_y": 5635.330844677346,
+        "opponent_center_z": 7756.0,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2500.0,
+        "team_center_distance": 8876.598447603677,
+        "velocity_difference": 40.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_006.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_007",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_007",
+      "scenario_vector": {
+        "altitude_difference": 1840.0,
+        "approximate_aspect_angle": 2.5774500063910457,
+        "heading_difference": 0.4900000000000002,
+        "opponent_center_x": -7878.6876510031825,
+        "opponent_center_y": 4911.115946158745,
+        "opponent_center_z": 7936.0,
+        "opponent_formation_spread": 1450.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2850.0,
+        "team_center_distance": 9323.368489982578,
+        "velocity_difference": 44.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_007.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_008",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_008",
+      "scenario_vector": {
+        "altitude_difference": 1300.0,
+        "approximate_aspect_angle": 2.719041524724275,
+        "heading_difference": 0.6099999999999999,
+        "opponent_center_x": -8799.402744141094,
+        "opponent_center_y": 4014.8458028807418,
+        "opponent_center_z": 7396.0,
+        "opponent_formation_spread": 1700.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 1800.0,
+        "team_center_distance": 9647.984245426605,
+        "velocity_difference": 48.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_008.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance",
+        "altitude_difference",
+        "velocity_difference",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_initial_disadvantage_009",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own aircraft start from a tactically disadvantaged geometry",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_random_initial_disadvantage",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_009",
+      "scenario_vector": {
+        "altitude_difference": 1480.0,
+        "approximate_aspect_angle": 2.8335325436008034,
+        "heading_difference": 0.73,
+        "opponent_center_x": -9614.181737143608,
+        "opponent_center_y": 2955.282504889126,
+        "opponent_center_z": 7576.0,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2150.0,
+        "team_center_distance": 10089.142679137807,
+        "velocity_difference": 52.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_initial_disadvantage_009.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "initial_disadvantage",
+        "generalization_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_000",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_000",
+      "scenario_vector": {
+        "altitude_difference": 450.0,
+        "approximate_aspect_angle": 1.5500345280808177,
+        "heading_difference": 0.5499999999999998,
+        "opponent_center_x": 162.19965686412093,
+        "opponent_center_y": 8076.300677288524,
+        "opponent_center_z": 6546.0,
+        "opponent_formation_spread": 1050.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6500.0,
+        "team_center_distance": 7812.96998586325,
+        "velocity_difference": 18.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_000.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_001",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_001",
+      "scenario_vector": {
+        "altitude_difference": 670.0,
+        "approximate_aspect_angle": 1.799264939445991,
+        "heading_difference": 0.73,
+        "opponent_center_x": -1913.0416373157934,
+        "opponent_center_y": 8477.784368605942,
+        "opponent_center_z": 6766.0,
+        "opponent_formation_spread": 1230.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6820.0,
+        "team_center_distance": 8446.614706496324,
+        "velocity_difference": 25.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_001.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_002",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_002",
+      "scenario_vector": {
+        "altitude_difference": 890.0,
+        "approximate_aspect_angle": 2.047501628370598,
+        "heading_difference": 0.9100000000000001,
+        "opponent_center_x": -4168.097130045483,
+        "opponent_center_y": 8299.743129057253,
+        "opponent_center_z": 6986.0,
+        "opponent_formation_spread": 1410.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 7140.0,
+        "team_center_distance": 9083.70519116511,
+        "velocity_difference": 32.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_002.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_003",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_003",
+      "scenario_vector": {
+        "altitude_difference": 1110.0,
+        "approximate_aspect_angle": 2.2941743085821344,
+        "heading_difference": 1.0899999999999999,
+        "opponent_center_x": -6436.2263655630995,
+        "opponent_center_y": 7481.499666238658,
+        "opponent_center_z": 7206.0,
+        "opponent_formation_spread": 1590.000000000001,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 7460.0,
+        "team_center_distance": 9723.564161355649,
+        "velocity_difference": 39.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_003.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_004",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_004",
+      "scenario_vector": {
+        "altitude_difference": 1330.0,
+        "approximate_aspect_angle": 2.537807789657691,
+        "heading_difference": 1.2699999999999996,
+        "opponent_center_x": -8532.950342218082,
+        "opponent_center_y": 6010.975931395306,
+        "opponent_center_z": 7426.0,
+        "opponent_formation_spread": 1050.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6500.0,
+        "team_center_distance": 10365.678945442985,
+        "velocity_difference": 18.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_004.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_005",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_005",
+      "scenario_vector": {
+        "altitude_difference": 450.0,
+        "approximate_aspect_angle": 1.5500177025764503,
+        "heading_difference": 0.5499999999999998,
+        "opponent_center_x": 226.66362305370745,
+        "opponent_center_y": 11175.630346275531,
+        "opponent_center_z": 6546.0,
+        "opponent_formation_spread": 1230.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6820.0,
+        "team_center_distance": 10909.285036151545,
+        "velocity_difference": 25.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_005.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_006",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_006",
+      "scenario_vector": {
+        "altitude_difference": 670.0,
+        "approximate_aspect_angle": 1.799606435443464,
+        "heading_difference": 0.73,
+        "opponent_center_x": -2617.3681308643636,
+        "opponent_center_y": 11496.712024328348,
+        "opponent_center_z": 6766.0,
+        "opponent_formation_spread": 1410.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 7140.0,
+        "team_center_distance": 11539.467058751025,
+        "velocity_difference": 31.99999999999997
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_006.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_007",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_007",
+      "scenario_vector": {
+        "altitude_difference": 890.0,
+        "approximate_aspect_angle": 2.048609797573703,
+        "heading_difference": 0.9100000000000001,
+        "opponent_center_x": -5597.422473313292,
+        "opponent_center_y": 11050.566471820717,
+        "opponent_center_z": 6986.0,
+        "opponent_formation_spread": 1590.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 7460.0,
+        "team_center_distance": 12172.579841594796,
+        "velocity_difference": 39.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_007.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_008",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_008",
+      "scenario_vector": {
+        "altitude_difference": 1110.0,
+        "approximate_aspect_angle": 2.296643432793208,
+        "heading_difference": 1.0899999999999999,
+        "opponent_center_x": -8501.682031530554,
+        "opponent_center_y": 9793.18582398649,
+        "opponent_center_z": 7206.0,
+        "opponent_formation_spread": 1050.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6500.0,
+        "team_center_distance": 12808.188786866003,
+        "velocity_difference": 18.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_008.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "own_formation_spread",
+        "opponent_formation_spread",
+        "team_center_distance",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_coordination_stress_009",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "own formation starts wide while opponent formation is compact",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "own formation starts wide while opponent formation is compact",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_coordination_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_009",
+      "scenario_vector": {
+        "altitude_difference": 1330.0,
+        "approximate_aspect_angle": 2.5427399605969514,
+        "heading_difference": 1.2699999999999996,
+        "opponent_center_x": -11106.116301447271,
+        "opponent_center_y": 7739.795455308698,
+        "opponent_center_z": 7426.0,
+        "opponent_formation_spread": 1230.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6820.0,
+        "team_center_distance": 13445.939907644984,
+        "velocity_difference": 25.000000000000085
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_coordination_stress_009.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "coordination_failure"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_000",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_000",
+      "scenario_vector": {
+        "altitude_difference": -300.0,
+        "approximate_aspect_angle": 0.3526525278482007,
+        "heading_difference": 2.3499999999999996,
+        "opponent_center_x": 6387.734447362176,
+        "opponent_center_y": 2609.692407308608,
+        "opponent_center_z": 5796.0,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 3600.0,
+        "team_center_distance": 6806.614430096653,
+        "velocity_difference": -8.000000000000028
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_000.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_001",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_001",
+      "scenario_vector": {
+        "altitude_difference": -180.0,
+        "approximate_aspect_angle": 0.5305388246275234,
+        "heading_difference": 2.51,
+        "opponent_center_x": 6177.698624885689,
+        "opponent_center_y": 3897.6060396382436,
+        "opponent_center_z": 5916.0,
+        "opponent_formation_spread": 1420.0000000000005,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 4120.0,
+        "team_center_distance": 7162.262212457738,
+        "velocity_difference": -4.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_001.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_002",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_002",
+      "scenario_vector": {
+        "altitude_difference": -60.0,
+        "approximate_aspect_angle": 0.7100370293739403,
+        "heading_difference": 2.67,
+        "opponent_center_x": 5702.881307448622,
+        "opponent_center_y": 5179.777274693495,
+        "opponent_center_z": 6036.0,
+        "opponent_formation_spread": 1640.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 4640.0,
+        "team_center_distance": 7520.239357892806,
+        "velocity_difference": 0.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_002.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_003",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_003",
+      "scenario_vector": {
+        "altitude_difference": 60.0,
+        "approximate_aspect_angle": 0.8900234785339293,
+        "heading_difference": 2.83,
+        "opponent_center_x": 4959.766769400731,
+        "opponent_center_y": 6401.3126871229115,
+        "opponent_center_z": 6156.0,
+        "opponent_formation_spread": 1860.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5160.0,
+        "team_center_distance": 7880.22842308521,
+        "velocity_difference": 4.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_003.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_004",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_004",
+      "scenario_vector": {
+        "altitude_difference": 180.0,
+        "approximate_aspect_angle": 1.0701305402473404,
+        "heading_difference": 2.99,
+        "opponent_center_x": 3956.2236471951223,
+        "opponent_center_y": 7506.119471834915,
+        "opponent_center_z": 6276.0,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5680.0,
+        "team_center_distance": 8241.965784932621,
+        "velocity_difference": 8.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_004.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_005",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_005",
+      "scenario_vector": {
+        "altitude_difference": 300.0,
+        "approximate_aspect_angle": 0.3516615201974377,
+        "heading_difference": 2.3499999999999996,
+        "opponent_center_x": 8078.605330487459,
+        "opponent_center_y": 3226.9084607284203,
+        "opponent_center_z": 6396.0,
+        "opponent_formation_spread": 1420.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 3600.0,
+        "team_center_distance": 8605.230967266363,
+        "velocity_difference": -8.000000000000028
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_005.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_006",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_006",
+      "scenario_vector": {
+        "altitude_difference": 420.0,
+        "approximate_aspect_angle": 0.5318690013460223,
+        "heading_difference": 2.51,
+        "opponent_center_x": 7730.751351812259,
+        "opponent_center_y": 4807.566053806968,
+        "opponent_center_z": 6516.0,
+        "opponent_formation_spread": 1640.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 4120.0,
+        "team_center_distance": 8969.838348599154,
+        "velocity_difference": -4.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_006.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_007",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_007",
+      "scenario_vector": {
+        "altitude_difference": -300.0,
+        "approximate_aspect_angle": 0.7106020477702266,
+        "heading_difference": 2.67,
+        "opponent_center_x": 7067.932684231537,
+        "opponent_center_y": 6353.07806253226,
+        "opponent_center_z": 5796.0,
+        "opponent_formation_spread": 1860.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 4640.0,
+        "team_center_distance": 9324.82707614463,
+        "velocity_difference": 0.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_007.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_008",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_008",
+      "scenario_vector": {
+        "altitude_difference": -180.0,
+        "approximate_aspect_angle": 0.8901399912814196,
+        "heading_difference": 2.83,
+        "opponent_center_x": 6092.708417233386,
+        "opponent_center_y": 7800.041832671195,
+        "opponent_center_z": 5916.0,
+        "opponent_formation_spread": 1200.000000000001,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5160.0,
+        "team_center_distance": 9681.67340907552,
+        "velocity_difference": 4.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_008.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "opponent_formation_spread",
+        "own_formation_spread",
+        "team_center_distance",
+        "heading_difference",
+        "approximate_aspect_angle"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "hard_target_assignment_stress_009",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "metadata": {
+        "difficulty_intent": "enemy geometry is compact and ambiguous for target assignment",
+        "is_replay": false,
+        "not_for_training_pool": true,
+        "perturbation": null,
+        "scenario_group": "hard_target_assignment_stress",
+        "source_failure_id": null
+      },
+      "not_in_training_pool": true,
+      "perturbation": null,
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_009",
+      "scenario_vector": {
+        "altitude_difference": -60.0,
+        "approximate_aspect_angle": 1.0700097734306464,
+        "heading_difference": 2.99,
+        "opponent_center_x": 4820.447259446484,
+        "opponent_center_y": 9085.080379529341,
+        "opponent_center_z": 6036.0,
+        "opponent_formation_spread": 1420.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5680.0,
+        "team_center_distance": 10040.17928126784,
+        "velocity_difference": 8.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\hard_target_assignment_stress_009.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": null,
+      "source_failure_path": null,
+      "target_failure_modes": [
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_000",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 800.0,
+          "aspect_angle_delta": 0.35,
+          "opponent_formation_spread_delta": 300.0,
+          "own_formation_spread_delta": 700.0,
+          "team_center_distance_delta": -600.0,
+          "velocity_difference_delta": 18.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 800.0,
+        "aspect_angle_delta": 0.35,
+        "opponent_formation_spread_delta": 300.0,
+        "own_formation_spread_delta": 700.0,
+        "team_center_distance_delta": -600.0,
+        "velocity_difference_delta": 18.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_000",
+      "scenario_vector": {
+        "altitude_difference": 790.2680995068031,
+        "approximate_aspect_angle": 0.35842809220419997,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 9909.042397312223,
+        "opponent_center_y": 3904.9094841734313,
+        "opponent_center_z": 6886.268099506803,
+        "opponent_formation_spread": 1699.9999999999995,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2100.0,
+        "team_center_distance": 10581.503168755426,
+        "velocity_difference": 17.999999999999858
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_000.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_001",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 500.0,
+          "aspect_angle_delta": -0.45,
+          "opponent_formation_spread_delta": -350.0,
+          "own_formation_spread_delta": 700.0,
+          "team_center_distance_delta": 900.0,
+          "velocity_difference_delta": 34.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 500.0,
+        "aspect_angle_delta": -0.45,
+        "opponent_formation_spread_delta": -350.0,
+        "own_formation_spread_delta": 700.0,
+        "team_center_distance_delta": 900.0,
+        "velocity_difference_delta": 34.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_001",
+      "scenario_vector": {
+        "altitude_difference": 490.2680995068031,
+        "approximate_aspect_angle": 0.2532161480805241,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 11677.285752160504,
+        "opponent_center_y": 3259.687895215236,
+        "opponent_center_z": 6586.268099506803,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2100.0,
+        "team_center_distance": 12061.91956893472,
+        "velocity_difference": 33.999999999999915
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_001.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_002",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 500.0,
+          "aspect_angle_delta": 0.55,
+          "opponent_formation_spread_delta": 550.0,
+          "own_formation_spread_delta": 1000.0,
+          "team_center_distance_delta": 600.0,
+          "velocity_difference_delta": 18.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 500.0,
+        "aspect_angle_delta": 0.55,
+        "opponent_formation_spread_delta": 550.0,
+        "own_formation_spread_delta": 1000.0,
+        "team_center_distance_delta": 600.0,
+        "velocity_difference_delta": 18.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_002",
+      "scenario_vector": {
+        "altitude_difference": 490.2680995068031,
+        "approximate_aspect_angle": 0.5522890024862623,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 10013.442699295487,
+        "opponent_center_y": 6429.355874796587,
+        "opponent_center_z": 6586.268099506803,
+        "opponent_formation_spread": 1950.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2400.0,
+        "team_center_distance": 11762.173805895562,
+        "velocity_difference": 17.999999999999858
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_002.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_003",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 500.0,
+          "aspect_angle_delta": -0.45,
+          "opponent_formation_spread_delta": 300.0,
+          "own_formation_spread_delta": 1000.0,
+          "team_center_distance_delta": 900.0,
+          "velocity_difference_delta": 34.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 500.0,
+        "aspect_angle_delta": -0.45,
+        "opponent_formation_spread_delta": 300.0,
+        "own_formation_spread_delta": 1000.0,
+        "team_center_distance_delta": 900.0,
+        "velocity_difference_delta": 34.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_003",
+      "scenario_vector": {
+        "altitude_difference": 490.2680995068031,
+        "approximate_aspect_angle": 0.2532161480805241,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 11677.285752160504,
+        "opponent_center_y": 3259.6878952152365,
+        "opponent_center_z": 6586.268099506803,
+        "opponent_formation_spread": 1700.0000000000005,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2400.0,
+        "team_center_distance": 12061.91956893472,
+        "velocity_difference": 33.999999999999915
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_003.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_004",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 800.0,
+          "aspect_angle_delta": 0.35,
+          "opponent_formation_spread_delta": 300.0,
+          "own_formation_spread_delta": 1300.0,
+          "team_center_distance_delta": 600.0,
+          "velocity_difference_delta": 26.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 800.0,
+        "aspect_angle_delta": 0.35,
+        "opponent_formation_spread_delta": 300.0,
+        "own_formation_spread_delta": 1300.0,
+        "team_center_distance_delta": 600.0,
+        "velocity_difference_delta": 26.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_004",
+      "scenario_vector": {
+        "altitude_difference": 790.2680995068031,
+        "approximate_aspect_angle": 0.35698138859440576,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 11035.928793636296,
+        "opponent_center_y": 4317.374088448446,
+        "opponent_center_z": 6886.268099506803,
+        "opponent_formation_spread": 1700.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2700.0,
+        "team_center_distance": 11778.492836513497,
+        "velocity_difference": 25.999999999999915
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_004.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_005",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": -500.0,
+          "aspect_angle_delta": 0.35,
+          "opponent_formation_spread_delta": 550.0,
+          "own_formation_spread_delta": 700.0,
+          "team_center_distance_delta": -600.0,
+          "velocity_difference_delta": 18.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": -500.0,
+        "aspect_angle_delta": 0.35,
+        "opponent_formation_spread_delta": 550.0,
+        "own_formation_spread_delta": 700.0,
+        "team_center_distance_delta": -600.0,
+        "velocity_difference_delta": 18.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_005",
+      "scenario_vector": {
+        "altitude_difference": -509.7319004931969,
+        "approximate_aspect_angle": 0.35404438619705747,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 9909.042397312223,
+        "opponent_center_y": 3904.9094841734313,
+        "opponent_center_z": 5586.268099506803,
+        "opponent_formation_spread": 1949.9999999999995,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2100.0,
+        "team_center_distance": 10564.256351095588,
+        "velocity_difference": 17.999999999999858
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_005.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_006",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": -500.0,
+          "aspect_angle_delta": 0.55,
+          "opponent_formation_spread_delta": -350.0,
+          "own_formation_spread_delta": 1000.0,
+          "team_center_distance_delta": 900.0,
+          "velocity_difference_delta": 18.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": -500.0,
+        "aspect_angle_delta": 0.55,
+        "opponent_formation_spread_delta": -350.0,
+        "own_formation_spread_delta": 1000.0,
+        "team_center_distance_delta": 900.0,
+        "velocity_difference_delta": 18.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_006",
+      "scenario_vector": {
+        "altitude_difference": -509.7319004931969,
+        "approximate_aspect_angle": 0.5523282302345002,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 10269.062606083791,
+        "opponent_center_y": 6586.386009654641,
+        "opponent_center_z": 5586.268099506803,
+        "opponent_formation_spread": 1200.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2400.0,
+        "team_center_distance": 12062.726370453604,
+        "velocity_difference": 17.999999999999858
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_006.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_007",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 500.0,
+          "aspect_angle_delta": 0.35,
+          "opponent_formation_spread_delta": 300.0,
+          "own_formation_spread_delta": 1000.0,
+          "team_center_distance_delta": 900.0,
+          "velocity_difference_delta": 34.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 500.0,
+        "aspect_angle_delta": 0.35,
+        "opponent_formation_spread_delta": 300.0,
+        "own_formation_spread_delta": 1000.0,
+        "team_center_distance_delta": 900.0,
+        "velocity_difference_delta": 34.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_007",
+      "scenario_vector": {
+        "altitude_difference": 490.2680995068031,
+        "approximate_aspect_angle": 0.35312677219880323,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 11317.650392717314,
+        "opponent_center_y": 4420.490239517199,
+        "opponent_center_z": 6586.268099506803,
+        "opponent_formation_spread": 1700.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2400.0,
+        "team_center_distance": 12061.91956893472,
+        "velocity_difference": 33.999999999999915
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_007.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_008",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": 800.0,
+          "aspect_angle_delta": 0.35,
+          "opponent_formation_spread_delta": 550.0,
+          "own_formation_spread_delta": 1000.0,
+          "team_center_distance_delta": -600.0,
+          "velocity_difference_delta": 34.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": 800.0,
+        "aspect_angle_delta": 0.35,
+        "opponent_formation_spread_delta": 550.0,
+        "own_formation_spread_delta": 1000.0,
+        "team_center_distance_delta": -600.0,
+        "velocity_difference_delta": 34.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_008",
+      "scenario_vector": {
+        "altitude_difference": 790.2680995068031,
+        "approximate_aspect_angle": 0.35842809220419997,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 9909.042397312223,
+        "opponent_center_y": 3904.9094841734313,
+        "opponent_center_z": 6886.268099506803,
+        "opponent_formation_spread": 1949.9999999999995,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2400.0,
+        "team_center_distance": 10581.503168755426,
+        "velocity_difference": 33.999999999999915
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_008.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    },
+    {
+      "candidate_schema_validation": {
+        "is_valid": true,
+        "missing_fields": [],
+        "schema_version": "falcon.candidate_validation.v1",
+        "warnings": []
+      },
+      "changed_factors": [
+        "team_center_distance_delta",
+        "own_formation_spread_delta",
+        "opponent_formation_spread_delta",
+        "altitude_difference_delta",
+        "velocity_difference_delta",
+        "aspect_angle_delta"
+      ],
+      "constraint_result": {
+        "is_valid": true,
+        "missing_fields": [],
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "scenario_id": "replay_failure_variant_009",
+        "schema_version": "1.0",
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "metadata": {
+        "difficulty_intent": "small perturbation around a real FALCON failure trajectory",
+        "is_replay": true,
+        "not_for_training_pool": true,
+        "perturbation": {
+          "altitude_difference_delta": -500.0,
+          "aspect_angle_delta": 0.35,
+          "opponent_formation_spread_delta": 300.0,
+          "own_formation_spread_delta": 700.0,
+          "team_center_distance_delta": -600.0,
+          "velocity_difference_delta": 34.0
+        },
+        "scenario_group": "replay_failure_variants",
+        "source_failure_id": "round0_failure_eval_000001"
+      },
+      "not_in_training_pool": true,
+      "perturbation": {
+        "altitude_difference_delta": -500.0,
+        "aspect_angle_delta": 0.35,
+        "opponent_formation_spread_delta": 300.0,
+        "own_formation_spread_delta": 700.0,
+        "team_center_distance_delta": -600.0,
+        "velocity_difference_delta": 34.0
+      },
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_009",
+      "scenario_vector": {
+        "altitude_difference": -509.7319004931969,
+        "approximate_aspect_angle": 0.35404438619705747,
+        "heading_difference": 2.9000000000000004,
+        "opponent_center_x": 9909.042397312223,
+        "opponent_center_y": 3904.9094841734313,
+        "opponent_center_z": 5586.268099506803,
+        "opponent_formation_spread": 1699.9999999999995,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2100.0,
+        "team_center_distance": 10564.256351095588,
+        "velocity_difference": 33.999999999999915
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2\\replay_failure_variant_009.yaml",
+      "source": "hard_eval_v2_generator",
+      "source_failure_id": "round0_failure_eval_000001",
+      "source_failure_path": "experiments\\falcon_2v2_noweapon\\results\\falcon_no_fsn\\seed_0\\pilot_run\\controller\\round0_failure_trajectories\\round0_failure_eval_000001_failure.json",
+      "target_failure_modes": [
+        "coordination_failure",
+        "target_assignment_confusion"
+      ],
+      "yaml_structure_loadable": true
+    }
+  ],
+  "schema_version": "falcon.hard_eval_scenario_manifest.v2",
+  "shared_across_groups": true,
+  "warnings": []
+}

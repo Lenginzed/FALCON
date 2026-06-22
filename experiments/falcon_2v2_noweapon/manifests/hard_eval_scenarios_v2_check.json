@@ -1,0 +1,511 @@
+{
+  "constraint_valid_count": 40,
+  "created_at": "2026-06-06T01:47:56+0800",
+  "env_load_reset_success_count": 40,
+  "failure_stage": null,
+  "manifest_path": "E:\\Lenginzed\\FALCON-CL\\experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2.json",
+  "nearest_training_pool_distance": {
+    "count_below_0_05": 0,
+    "count_below_0_10": 9,
+    "max": 0.301053,
+    "mean": 0.178172,
+    "min": 0.077525
+  },
+  "rows": [
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.222486,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_000",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.223664,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_001",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.230994,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_002",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.238713,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_003",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.208451,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_004",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.197472,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_005",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.201387,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_006",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.215287,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_007",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.182135,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_008",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.195131,
+      "rejection_reasons": "",
+      "scenario_group": "hard_random_initial_disadvantage",
+      "scenario_id": "hard_initial_disadvantage_009",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.276994,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_000",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.276327,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_001",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.280158,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_002",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.292915,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_003",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.288273,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_004",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.263594,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_005",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.270728,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_006",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.28405,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_007",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.279633,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_008",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.301053,
+      "rejection_reasons": "",
+      "scenario_group": "hard_coordination_stress",
+      "scenario_id": "hard_coordination_stress_009",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.169439,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_000",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.149464,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_001",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.137072,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_002",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.135521,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_003",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.119746,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_004",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.127436,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_005",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.111973,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_006",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.101585,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_007",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.089254,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_008",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": false,
+      "nearest_training_pool_distance": 0.08629,
+      "rejection_reasons": "",
+      "scenario_group": "hard_target_assignment_stress",
+      "scenario_id": "hard_target_assignment_stress_009",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.091702,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_000",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.090913,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_001",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.088901,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_002",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.108461,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_003",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.098406,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_004",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.095094,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_005",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.077525,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_006",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.108633,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_007",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.116452,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_008",
+      "warnings": "",
+      "yaml_exists": true
+    },
+    {
+      "constraint_valid": true,
+      "env_load_reset_success": true,
+      "is_replay": true,
+      "nearest_training_pool_distance": 0.093581,
+      "rejection_reasons": "",
+      "scenario_group": "replay_failure_variants",
+      "scenario_id": "replay_failure_variant_009",
+      "warnings": "",
+      "yaml_exists": true
+    }
+  ],
+  "scenario_count": 40,
+  "scenario_group_counts": {
+    "hard_coordination_stress": 10,
+    "hard_random_initial_disadvantage": 10,
+    "hard_target_assignment_stress": 10,
+    "replay_failure_variants": 10
+  },
+  "scenario_vector_stats": {
+    "altitude_difference": {
+      "max": 1840.0,
+      "mean": 673.067025,
+      "min": -509.7319,
+      "std": 695.41969
+    },
+    "approximate_aspect_angle": {
+      "max": 2.833533,
+      "mean": 1.427239,
+      "min": 0.253216,
+      "std": 0.95464
+    },
+    "heading_difference": {
+      "max": 2.99,
+      "mean": 1.7425,
+      "min": 0.25,
+      "std": 1.08683
+    },
+    "opponent_formation_spread": {
+      "max": 1950.0,
+      "mean": 1467.5,
+      "min": 1050.0,
+      "std": 271.696947
+    },
+    "own_formation_spread": {
+      "max": 7460.0,
+      "mean": 4030.25,
+      "min": 1800.0,
+      "std": 2003.839248
+    },
+    "team_center_distance": {
+      "max": 13445.939908,
+      "mean": 9675.278141,
+      "min": 6334.824386,
+      "std": 1874.353654
+    },
+    "velocity_difference": {
+      "max": 52.0,
+      "mean": 24.475,
+      "min": -8.0,
+      "std": 17.341203
+    }
+  },
+  "schema_version": "falcon.hard_eval_v2_check.v1",
+  "training_pool_vector_count": 238,
+  "warnings": [],
+  "yaml_exists_count": 40
+}

@@ -1,0 +1,16 @@
+schema_version: falcon.baseline_group_config.v1
+group: mappo_random_curriculum
+description: MAPPO with random legal scenarios and curriculum scheduling, without Qwen or failure-aware generation.
+candidate_generator: random
+failure_analyzer: false
+constraint_checker: true
+policy_evaluator: false
+policy_evaluator_used_for_filtering: false
+difficulty_evaluator: false
+curriculum_pool: true
+curriculum_scheduler: true
+acceptance_rule: constraint_valid_only
+qwen_enabled: false
+fsn_enabled: false
+training_scenario_mode: random_curriculum
+final_evaluation_on_shared_set: true

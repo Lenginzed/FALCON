@@ -1,0 +1,5 @@
+{
+  "schema_version": "falcon.success_stats.v1",
+  "mean_success_team_reward": 500.0,
+  "num_success_episodes": 8
+}

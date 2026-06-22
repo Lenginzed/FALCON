@@ -1,0 +1,33 @@
+schema_version: falcon.fsn_replacement_controlled_smoke_protocol.v1
+group: falcon_fsn_25_controlled
+seed: 4
+environment: 2v2/NoWeapon/Selfplay
+max_rounds: 5
+train_steps_per_round: 64
+eval_episodes_per_round: 1
+policy_eval_episodes_per_candidate: 1
+output_dir: experiments/falcon_2v2_noweapon/results_fsn_replacement_smoke_controlled/falcon_fsn_25/seed_4
+fsn_replacement:
+  enabled: true
+  fsn_model_path: experiments/falcon_2v2_noweapon/fsn/stage2/fsn_stage2_model.pt
+  target_fsn_ratio: 0.25
+  replacement_ratio: 0.25
+  qwen_ratio: 0.75
+  total_candidates_per_round: 4
+  qwen_quota: 3
+  fsn_quota: 1
+  enforce_quota: true
+  max_actual_fsn_share: 0.30
+  qwen_retry_to_fill_quota: true
+  qwen_max_retries_per_round: 2
+  fallback_when_qwen_shortfall: random
+  do_not_backfill_qwen_shortfall_with_fsn: true
+  fallback_to_qwen_if_fsn_invalid: true
+  use_diversity_aware_fsn: true
+  record_generator_source: true
+evaluation:
+  opponent_mode: fixed_checkpoint
+  opponent_checkpoint: experiments/falcon_2v2_noweapon/opponents/fixed_baseline_opponent/candidate_seed999_steps2048/checkpoints/actor_seed999_steps2048.pt
+  hard_eval_manifest: experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2.json
+  hard_eval_scenario_limit: 5
+  hard_eval_episodes_per_scenario: 1

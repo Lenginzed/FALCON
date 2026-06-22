@@ -1,0 +1,65 @@
+schema_version: falcon.fsn25_hardness_v2_5r_smoke_protocol.v1
+group: falcon_fsn25_hardness_v2
+seed: 4
+environment: 2v2/NoWeapon/Selfplay
+base_scenario_config: envs/JSBSim/configs/2v2/NoWeapon/Selfplay.yaml
+max_rounds: 5
+train_steps_per_round: 128
+eval_episodes_per_round: 1
+policy_eval_episodes_per_candidate: 1
+output_dir: experiments/falcon_2v2_noweapon/results_fsn_hardness_v2_5r_smoke/falcon_fsn25_hardness_v2/seed_4
+qwen:
+  provider: ollama
+  provider_mode: ollama_native
+  model_name: qwen3:8b
+  think: false
+  stream: false
+  temperature: 0.1
+  top_p: 0.8
+  max_tokens: 4096
+  timeout: 180
+  num_retries: 2
+fsn_replacement:
+  enabled: true
+  fsn_model_path: experiments/falcon_2v2_noweapon/fsn/stage2/fsn_stage2_model.pt
+  fsn_surrogate_model_path: experiments/falcon_2v2_noweapon/fsn/stage6_hardness_v2/fsn_hardness_surrogate_model.pt
+  target_fsn_ratio: 0.25
+  replacement_ratio: 0.25
+  qwen_ratio: 0.75
+  total_candidates_per_round: 4
+  qwen_quota: 3
+  fsn_quota: 1
+  enforce_quota: true
+  max_actual_fsn_share: 0.30
+  qwen_retry_to_fill_quota: true
+  qwen_max_retries_per_round: 2
+  fallback_when_qwen_shortfall: random
+  qwen_shortfall_fallback: random
+  do_not_backfill_qwen_shortfall_with_fsn: true
+  fallback_to_qwen_if_fsn_invalid: true
+  record_generator_source: true
+  use_diversity_aware_fsn: true
+  use_fsn_repair: true
+  use_hardness_v2: true
+  use_fsn_rerank: false
+  fsn_overgenerate_n: 64
+  fsn_select_top_k: 1
+  fsn_repair_max_attempts: 3
+  fsn_repair_margin_m: 5.0
+  adapter_aware_projection: true
+  post_yaml_constraint_check: true
+  hardness_v2_score:
+    predicted_learning_potential: 0.30
+    predicted_accepted_probability: 0.25
+    diversity_bonus: 0.20
+    pool_novelty: 0.10
+    predicted_too_easy_probability: 0.10
+    predicted_not_solvable_probability: 0.10
+    constraint_risk: 0.05
+evaluation:
+  opponent_mode: fixed_checkpoint
+  opponent_checkpoint: experiments/falcon_2v2_noweapon/opponents/fixed_baseline_opponent/candidate_seed999_steps2048/checkpoints/actor_seed999_steps2048.pt
+  hard_eval_manifest: experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2.json
+  hard_eval_scenario_limit: 5
+  hard_eval_episodes_per_scenario: 1
+  checkpoint_selection: latest

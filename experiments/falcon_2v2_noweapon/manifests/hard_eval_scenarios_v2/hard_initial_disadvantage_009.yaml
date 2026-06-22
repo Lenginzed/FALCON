@@ -1,0 +1,58 @@
+task: multiplecombat
+sim_freq: 60
+agent_interaction_steps: 12
+max_steps: 1000
+altitude_limit: 2500
+acceleration_limit_x: 10.0
+acceleration_limit_y: 10.0
+acceleration_limit_z: 10.0
+aircraft_configs:
+  A0100:
+    color: Red
+    model: f16
+    init_state:
+      ic_long_gc_deg: 119.98566458547275
+      ic_lat_geod_deg: 60.0
+      ic_h_sl_ft: 19999.999999999996
+      ic_psi_true_deg: 0.0
+      ic_u_fps: 799.9999999999999
+  A0200:
+    color: Red
+    model: f16
+    init_state:
+      ic_long_gc_deg: 120.02433541452726
+      ic_lat_geod_deg: 60.0
+      ic_h_sl_ft: 19999.999999999996
+      ic_psi_true_deg: 0.0
+      ic_u_fps: 799.9999999999999
+  B0100:
+    color: Blue
+    model: f16
+    init_state:
+      ic_h_sl_ft: 24855.64304461942
+      ic_long_gc_deg: 120.04230784970511
+      ic_lat_geod_deg: 59.913537586405575
+      ic_psi_true_deg: 41.8259190445501
+      ic_u_fps: 970.6036745406824
+  B0200:
+    color: Blue
+    model: f16
+    init_state:
+      ic_h_sl_ft: 24855.64304461942
+      ic_long_gc_deg: 120.0638634038863
+      ic_lat_geod_deg: 59.913537586405575
+      ic_psi_true_deg: 41.8259190445501
+      ic_u_fps: 970.6036745406824
+battle_field_center:
+- 120.0
+- 60.0
+- 0.0
+PostureReward_scale: 15.0
+PostureReward_potential: true
+PostureReward_orientation_version: v2
+PostureReward_range_version: v3
+AltitudeReward_safe_altitude: 4.0
+AltitudeReward_danger_altitude: 3.5
+AltitudeReward_Kv: 0.2
+RelativeAltitudeReward_KH: 1.0
+scenario_id: hard_initial_disadvantage_009

@@ -1,0 +1,118 @@
+schema_version: falcon.baseline_experiment_protocol.v1
+protocol_name: falcon_2v2_noweapon_stability_aware_seed4
+status: stability_aware_seed4_mini_pilot
+environment: 2v2/NoWeapon/Selfplay
+environment_name: MultipleCombat
+task_name: MultiCombat NoWeapon
+base_scenario_config: envs/JSBSim/configs/2v2/NoWeapon/Selfplay.yaml
+algorithm: MAPPO
+max_rounds: 10
+train_steps_per_round: 512
+eval_episodes_per_round: 5
+policy_eval_episodes_per_candidate: 3
+qwen_candidates_per_round: 4
+random_candidates_per_round: 4
+checkpoint_save_interval: 1
+seeds:
+- 4
+output_root: experiments/falcon_2v2_noweapon/results_stability_aware_seed4
+evaluation_scenarios: experiments/falcon_2v2_noweapon/manifests/eval_scenarios.json
+hard_evaluation_scenarios: experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2.json
+validation_split: experiments/falcon_2v2_noweapon/manifests/eval_split_v1.json
+coverage_aware_training:
+  enabled: true
+  scenarios_per_round: 8
+  scenario_batch_size: 8
+  total_train_steps_per_round: 512
+  per_scenario_train_steps: 64
+  accepted_llm_quota: 4
+  base_anchor_quota: 2
+  replay_failure_quota: 1
+  random_explore_quota: 1
+  category_quota:
+    accepted_llm: 4
+    base_anchor: 2
+    replay_failure: 1
+    random_explore: 1
+  unseen_bonus: 2.0
+  trained_count_threshold: 3
+stability_aware_training:
+  enabled: true
+  interleave_anchors: true
+  anchor_ratio_min: 0.5
+  accepted_ratio_max: 0.5
+  fallback_reallocate_to_anchor: true
+  save_intermediate_checkpoints: true
+  round_checkpoint_selection: anchor_validation
+  preserve_best_within_batch: true
+  anchor_validation_episodes: 1
+  anchor_validation_max_scenarios: 1
+  opponent_mode: fixed_checkpoint
+  opponent_checkpoint: experiments/falcon_2v2_noweapon/opponents/fixed_baseline_opponent/candidate_seed999_steps2048/checkpoints/actor_seed999_steps2048.pt
+evaluation:
+  protocol_version: falcon.fixed_opponent_eval.v1
+  opponent_mode: fixed_checkpoint
+  opponent_checkpoint: experiments/falcon_2v2_noweapon/opponents/fixed_baseline_opponent/candidate_seed999_steps2048/checkpoints/actor_seed999_steps2048.pt
+  opponent_manifest: experiments/falcon_2v2_noweapon/manifests/eval_opponent.json
+  agent_team: A
+  opponent_team: B
+  deterministic: true
+  same_actor_allowed: false
+  eval_scenarios: experiments/falcon_2v2_noweapon/manifests/eval_scenarios.json
+  hard_eval_scenarios: experiments/falcon_2v2_noweapon/manifests/hard_eval_scenarios_v2.json
+  episodes_per_scenario: 3
+  checkpoint_selection: validation_selected
+  metrics:
+  - win_rate
+  - mean_return
+  - scenario_group_breakdown
+llm:
+  provider: ollama
+  provider_mode: ollama_native
+  model_name: qwen3:8b
+  think: false
+  stream: false
+  temperature: 0.1
+  top_p: 0.8
+  max_tokens: 4096
+  timeout: 180
+metrics:
+  training:
+  - round_win_rate
+  - best_win_rate
+  - mean_return
+  - accepted_rate
+  - accepted_coverage
+  - duplicate_rate
+  - fallback_rate
+  - checkpoint_count
+  final_evaluation:
+  - final_win_rate_on_eval_set
+  - mean_return_on_eval_set
+  - robustness
+  - curriculum_transfer
+sample_efficiency_target_win_rate: 0.6
+accepted_rate_alert_threshold: 0.15
+fallback_rate_alert_threshold: 0.3
+longest_no_accepted_alert_threshold: 3
+group_configs:
+  mappo_base: experiments/falcon_2v2_noweapon/configs/mappo_base.yaml
+  mappo_random_curriculum: experiments/falcon_2v2_noweapon/configs/mappo_random_curriculum.yaml
+  mappo_qwen_only: experiments/falcon_2v2_noweapon/configs/mappo_qwen_only.yaml
+  falcon_no_fsn: experiments/falcon_2v2_noweapon/configs/falcon_no_fsn.yaml
+smoke:
+  max_rounds: 3
+  train_steps_per_round: 512
+  eval_episodes_per_round: 1
+  policy_eval_episodes_per_candidate: 1
+  qwen_candidates_per_round: 2
+  random_candidates_per_round: 2
+  evaluation_scenario_limit: 1
+pilot:
+  max_rounds: 10
+  train_steps_per_round: 512
+  eval_episodes_per_round: 5
+  policy_eval_episodes_per_candidate: 3
+  qwen_candidates_per_round: 4
+  random_candidates_per_round: 4
+  evaluation_scenario_limit: 21

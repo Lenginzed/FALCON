@@ -1,0 +1,15 @@
+schema_version: falcon.baseline_group_config.v1
+group: mappo_base
+description: Original MAPPO trained only on the fixed 2v2 NoWeapon Selfplay scenario.
+candidate_generator: none
+failure_analyzer: false
+constraint_checker: false
+policy_evaluator: false
+policy_evaluator_used_for_filtering: false
+difficulty_evaluator: false
+curriculum_pool: false
+curriculum_scheduler: false
+qwen_enabled: false
+fsn_enabled: false
+training_scenario_mode: fixed_base
+final_evaluation_on_shared_set: true

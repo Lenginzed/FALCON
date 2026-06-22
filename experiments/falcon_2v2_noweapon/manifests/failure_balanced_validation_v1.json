@@ -1,0 +1,811 @@
+{
+  "base_config_path": "envs\\JSBSim\\configs\\2v2\\NoWeapon\\Selfplay.yaml",
+  "created_at": "2026-06-07T19:35:44+0800",
+  "environment": "2v2/NoWeapon/Selfplay",
+  "exact_hard_eval_v2_overlap_count": 0,
+  "failure_stage": null,
+  "fixed_opponent_required": true,
+  "hard_eval_v2_source": "experiments\\falcon_2v2_noweapon\\manifests\\hard_eval_scenarios_v2.json",
+  "held_out_from_training": true,
+  "invalid_attempts": [],
+  "manifest_id": "failure_balanced_validation_v1",
+  "minimum_normalized_distance_to_hard_eval_v2": 0.035361,
+  "not_in_training_pool": true,
+  "same_actor_allowed": false,
+  "scenario_count": 16,
+  "scenario_group_counts": {
+    "coordination_stress_validation": 4,
+    "initial_disadvantage_validation": 4,
+    "replay_like_validation": 4,
+    "target_assignment_validation": 4
+  },
+  "scenarios": [
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "initial disadvantage validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "25c85391bbd3b2a81b3dc49e2b1fad313c90efddce011d366b0677286ffdaa2f",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.044818,
+      "not_in_training_pool": true,
+      "scenario_group": "initial_disadvantage_validation",
+      "scenario_id": "fbv1_initial_disadvantage_validation_00",
+      "scenario_vector": {
+        "altitude_difference": 1120.0,
+        "approximate_aspect_angle": 2.1112676660106144,
+        "heading_difference": 0.41999999999999993,
+        "opponent_center_x": -3419.153547263333,
+        "opponent_center_y": 5864.747470782879,
+        "opponent_center_z": 7216.0,
+        "opponent_formation_spread": 1450.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2150.0,
+        "team_center_distance": 6645.065838650509,
+        "velocity_difference": 31.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_initial_disadvantage_validation_00.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "initial disadvantage validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "a0c03be720832b8c995b9ad6c67ae99fb6d8babdefb785915e75b49ff7d5c97a",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.048653,
+      "not_in_training_pool": true,
+      "scenario_group": "initial_disadvantage_validation",
+      "scenario_id": "fbv1_initial_disadvantage_validation_01",
+      "scenario_vector": {
+        "altitude_difference": 1480.0,
+        "approximate_aspect_angle": 2.587557486362871,
+        "heading_difference": 0.8300000000000001,
+        "opponent_center_x": -6459.349074771228,
+        "opponent_center_y": 3990.036552579737,
+        "opponent_center_z": 7576.0,
+        "opponent_formation_spread": 1850.0000000000005,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2850.0,
+        "team_center_distance": 7595.584243493056,
+        "velocity_difference": 43.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_initial_disadvantage_validation_01.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "initial disadvantage validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "12851cb0b275ee112adff67e9672b841ad60f2e13d4f4f35f66d3775f3a80f00",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.085052,
+      "not_in_training_pool": true,
+      "scenario_group": "initial_disadvantage_validation",
+      "scenario_id": "fbv1_initial_disadvantage_validation_02",
+      "scenario_vector": {
+        "altitude_difference": 1780.0,
+        "approximate_aspect_angle": 2.8119383239039664,
+        "heading_difference": 1.17,
+        "opponent_center_x": -8355.721052242481,
+        "opponent_center_y": 2515.0446911801478,
+        "opponent_center_z": 7876.0,
+        "opponent_formation_spread": 1250.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 3450.0,
+        "team_center_distance": 8831.245665250175,
+        "velocity_difference": 51.000000000000085
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_initial_disadvantage_validation_02.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "initial disadvantage validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "15dd16d44f2eb5e930bd5d79860debe59868d8169531ff8067ef911cff73d8ce",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.070188,
+      "not_in_training_pool": true,
+      "scenario_group": "initial_disadvantage_validation",
+      "scenario_id": "fbv1_initial_disadvantage_validation_03",
+      "scenario_vector": {
+        "altitude_difference": 960.0,
+        "approximate_aspect_angle": 2.3357075074325606,
+        "heading_difference": 0.6800000000000002,
+        "opponent_center_x": -7059.967763598455,
+        "opponent_center_y": 7570.40496626317,
+        "opponent_center_z": 7056.0,
+        "opponent_formation_spread": 2349.999999999999,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 1950.0,
+        "team_center_distance": 10195.29793581335,
+        "velocity_difference": 37.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_initial_disadvantage_validation_03.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "coordination stress validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "dc9d19d3b44afa938478728c096fd8215e86d6b41811c8d5b608b9ef210d1ccb",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.061092,
+      "not_in_training_pool": true,
+      "scenario_group": "coordination_stress_validation",
+      "scenario_id": "fbv1_coordination_stress_validation_00",
+      "scenario_vector": {
+        "altitude_difference": 300.0,
+        "approximate_aspect_angle": 1.2502764211484838,
+        "heading_difference": 0.7199999999999998,
+        "opponent_center_x": 2317.619363605225,
+        "opponent_center_y": 7253.024268875098,
+        "opponent_center_z": 6396.0,
+        "opponent_formation_spread": 1450.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5900.0,
+        "team_center_distance": 7356.119901143538,
+        "velocity_difference": 12.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_coordination_stress_validation_00.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "coordination stress validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "90ec725ed1b51275cbf82461dde5b0f759c5ffc1cd5ce610492bab673bde2ca9",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.054987,
+      "not_in_training_pool": true,
+      "scenario_group": "coordination_stress_validation",
+      "scenario_id": "fbv1_coordination_stress_validation_01",
+      "scenario_vector": {
+        "altitude_difference": 750.0,
+        "approximate_aspect_angle": 1.7792585139758423,
+        "heading_difference": 1.1399999999999997,
+        "opponent_center_x": -1858.7449643986151,
+        "opponent_center_y": 9032.84694754354,
+        "opponent_center_z": 6846.0,
+        "opponent_formation_spread": 1950.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 7100.0,
+        "team_center_distance": 8981.369606023349,
+        "velocity_difference": 25.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_coordination_stress_validation_01.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "coordination stress validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "ff2cce4c160efc812e8a53ef0a0ea77c390d048323f20f438387b4cc1947afe9",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.112442,
+      "not_in_training_pool": true,
+      "scenario_group": "coordination_stress_validation",
+      "scenario_id": "fbv1_coordination_stress_validation_02",
+      "scenario_vector": {
+        "altitude_difference": 1100.0,
+        "approximate_aspect_angle": 2.1467866319292415,
+        "heading_difference": 1.58,
+        "opponent_center_x": -6048.302203556995,
+        "opponent_center_y": 9525.718954934939,
+        "opponent_center_z": 7196.0,
+        "opponent_formation_spread": 2550.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6250.0,
+        "team_center_distance": 11104.616157256403,
+        "velocity_difference": 38.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_coordination_stress_validation_02.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "coordination stress validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "7729080aee521db80bc7f409eb3678882ec45a878f03b8f144d820494febcdbc",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.183029,
+      "not_in_training_pool": true,
+      "scenario_group": "coordination_stress_validation",
+      "scenario_id": "fbv1_coordination_stress_validation_03",
+      "scenario_vector": {
+        "altitude_difference": -400.0,
+        "approximate_aspect_angle": 1.480041459561524,
+        "heading_difference": 1.9500000000000002,
+        "opponent_center_x": 1201.3990241521033,
+        "opponent_center_y": 13473.40850673527,
+        "opponent_center_z": 5696.0,
+        "opponent_formation_spread": 1650.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 7550.0,
+        "team_center_distance": 13256.036360843313,
+        "velocity_difference": 8.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_coordination_stress_validation_03.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "target assignment validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "814cf3bbcfd5cf6be81d198ca74e10d30a5b21d8a7eccac570de7551612118c5",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.035361,
+      "not_in_training_pool": true,
+      "scenario_group": "target_assignment_validation",
+      "scenario_id": "fbv1_target_assignment_validation_00",
+      "scenario_vector": {
+        "altitude_difference": -180.0,
+        "approximate_aspect_angle": 0.2810993787413754,
+        "heading_difference": 2.1799999999999997,
+        "opponent_center_x": 6871.546383922012,
+        "opponent_center_y": 2253.9302038449523,
+        "opponent_center_z": 5916.0,
+        "opponent_formation_spread": 1350.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 3200.0,
+        "team_center_distance": 7152.265375389814,
+        "velocity_difference": -5.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_target_assignment_validation_00.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "target assignment validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "3c2eb5981d514a397087e60d7ab6d82555b9875f4817f6bebd03b81c8d8440f6",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.03649,
+      "not_in_training_pool": true,
+      "scenario_group": "target_assignment_validation",
+      "scenario_id": "fbv1_target_assignment_validation_01",
+      "scenario_vector": {
+        "altitude_difference": 260.0,
+        "approximate_aspect_angle": 0.620694754465796,
+        "heading_difference": 2.4800000000000004,
+        "opponent_center_x": 6714.497267465905,
+        "opponent_center_y": 5071.527391044307,
+        "opponent_center_z": 6356.0,
+        "opponent_formation_spread": 1750.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 4100.0,
+        "team_center_distance": 8254.095952919375,
+        "velocity_difference": 6.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_target_assignment_validation_01.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "target assignment validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "51bbeee28524ed21cae1731e3ca744ed3712ed4efaa8cba019410e9ce976bd3c",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.072178,
+      "not_in_training_pool": true,
+      "scenario_group": "target_assignment_validation",
+      "scenario_id": "fbv1_target_assignment_validation_02",
+      "scenario_vector": {
+        "altitude_difference": 620.0,
+        "approximate_aspect_angle": 0.9415334007324054,
+        "heading_difference": 2.7200000000000006,
+        "opponent_center_x": 5632.475639046988,
+        "opponent_center_y": 7990.167175480379,
+        "opponent_center_z": 6716.0,
+        "opponent_formation_spread": 2199.999999999999,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5250.0,
+        "team_center_distance": 9570.104492637474,
+        "velocity_difference": 13.999999999999972
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_target_assignment_validation_02.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "target assignment validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "c3e63ac6a5eb52301bf3e45f78520211ddaf5cbf8cc270c504725c4fa2586a8f",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.063927,
+      "not_in_training_pool": true,
+      "scenario_group": "target_assignment_validation",
+      "scenario_id": "fbv1_target_assignment_validation_03",
+      "scenario_vector": {
+        "altitude_difference": -540.0,
+        "approximate_aspect_angle": 1.1804737432213255,
+        "heading_difference": 2.92,
+        "opponent_center_x": 4285.404274127421,
+        "opponent_center_y": 10679.804956201768,
+        "opponent_center_z": 5556.0,
+        "opponent_formation_spread": 1550.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 6000.0,
+        "team_center_distance": 11262.95254362727,
+        "velocity_difference": 21.99999999999997
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_target_assignment_validation_03.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "replay like validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "e45cd0c46a2be76e55c58313444c907f59a797442d476647fcef5b72e7714c69",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.145413,
+      "not_in_training_pool": true,
+      "scenario_group": "replay_like_validation",
+      "scenario_id": "fbv1_replay_like_validation_00",
+      "scenario_vector": {
+        "altitude_difference": 680.0,
+        "approximate_aspect_angle": 2.048062405667273,
+        "heading_difference": 1.3600000000000003,
+        "opponent_center_x": -3619.420627307195,
+        "opponent_center_y": 7243.781910383537,
+        "opponent_center_z": 6776.0,
+        "opponent_formation_spread": 2100.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115392,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 2750.0,
+        "team_center_distance": 7879.39718506435,
+        "velocity_difference": 28.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_replay_like_validation_00.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "replay like validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "915dad57566f4f6c3b6416a0a1d393770751e0341db004b5ce43a63111153880",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.115665,
+      "not_in_training_pool": true,
+      "scenario_group": "replay_like_validation",
+      "scenario_id": "fbv1_replay_like_validation_01",
+      "scenario_vector": {
+        "altitude_difference": -720.0,
+        "approximate_aspect_angle": 0.8824904186470338,
+        "heading_difference": 2.0600000000000005,
+        "opponent_center_x": 5893.648083836867,
+        "opponent_center_y": 7407.321946427004,
+        "opponent_center_z": 5376.0,
+        "opponent_formation_spread": 1699.999999999999,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 4300.0,
+        "team_center_distance": 9277.979305861809,
+        "velocity_difference": 34.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_replay_like_validation_01.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "replay like validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "2bee14ec2a19e41a47521b232ec5ef9a8cdd69eb3447fbfa6cd7190d1b86d6cc",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.115217,
+      "not_in_training_pool": true,
+      "scenario_group": "replay_like_validation",
+      "scenario_id": "fbv1_replay_like_validation_02",
+      "scenario_vector": {
+        "altitude_difference": 1250.0,
+        "approximate_aspect_angle": 2.4532273162133214,
+        "heading_difference": 0.96,
+        "opponent_center_x": -9202.357859869522,
+        "opponent_center_y": 7743.850282062862,
+        "opponent_center_z": 7346.0,
+        "opponent_formation_spread": 2850.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.987316611539,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 5600.0,
+        "team_center_distance": 11915.745885172273,
+        "velocity_difference": 18.00000000000003
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_replay_like_validation_02.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    },
+    {
+      "constraint_result": {
+        "is_valid": true,
+        "physical_constraint_check": {
+          "altitude_valid": true,
+          "heading_valid": true,
+          "minimum_separation_valid": true,
+          "position_valid": true,
+          "scenario_loadable": true,
+          "scenario_loadable_env_check": true,
+          "velocity_valid": true
+        },
+        "rejection_reasons": [],
+        "task_constraint_check": {
+          "formation_spread_valid": true,
+          "team_center_distance_valid": true
+        },
+        "validity_score": 1.0,
+        "warnings": []
+      },
+      "constraint_valid": true,
+      "difficulty_intent": "replay like validation",
+      "env_load_reset_success": true,
+      "exact_hard_eval_v2_overlap": false,
+      "geometry_sha256": "c7062efa0e89e097c20a43c5a2b0d0b848f3b35d9df7d02ede3a9a0b7e6801a3",
+      "held_out_from_training": true,
+      "nearest_hard_eval_v2_distance": 0.205351,
+      "not_in_training_pool": true,
+      "scenario_group": "replay_like_validation",
+      "scenario_id": "fbv1_replay_like_validation_03",
+      "scenario_vector": {
+        "altitude_difference": -1050.0,
+        "approximate_aspect_angle": 1.420388768872626,
+        "heading_difference": 2.66,
+        "opponent_center_x": 2200.8031342061977,
+        "opponent_center_y": 14761.735642389234,
+        "opponent_center_z": 5046.0,
+        "opponent_formation_spread": 3300.0,
+        "own_center_x": 0.0,
+        "own_center_y": 277.9873166115391,
+        "own_center_z": 6096.0,
+        "own_formation_spread": 3650.0,
+        "team_center_distance": 14687.579787017328,
+        "velocity_difference": -12.0
+      },
+      "scenario_yaml_path": "experiments\\falcon_2v2_noweapon\\manifests\\failure_balanced_validation_v1\\fbv1_replay_like_validation_03.yaml",
+      "selection_only": true,
+      "source": "failure_balanced_validation_generator_v1"
+    }
+  ],
+  "schema_version": "falcon.failure_balanced_validation_manifest.v1",
+  "selection_only": true,
+  "warnings": []
+}

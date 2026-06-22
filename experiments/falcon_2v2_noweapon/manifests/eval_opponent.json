@@ -1,0 +1,18 @@
+{
+  "accepted_for_formal_eval": true,
+  "checkpoint_path": "experiments\\falcon_2v2_noweapon\\opponents\\fixed_baseline_opponent\\candidate_seed999_steps2048\\checkpoints\\actor_seed999_steps2048.pt",
+  "checkpoint_sha256": "f5274b649a596c46bfa34d8c763c9e50a9bea192e67e7f81e9c097957e578802",
+  "sha256": "f5274b649a596c46bfa34d8c763c9e50a9bea192e67e7f81e9c097957e578802",
+  "created_at": "2026-06-05T16:12:15+0800",
+  "environment": "2v2/NoWeapon/Selfplay",
+  "opponent_id": "independent_mappo_seed999_steps2048",
+  "opponent_mode": "fixed_checkpoint",
+  "schema_version": "falcon.eval_opponent_manifest.v1",
+  "seed": 999,
+  "source": "independent_mappo_baseline",
+  "strength_eval_summary": "experiments\\falcon_2v2_noweapon\\opponents\\fixed_baseline_opponent\\eval_opponent_strength.json",
+  "training_steps": 2048,
+  "warnings": [
+    "Repeated episodes were deterministic within each scenario; strength confidence comes from scenario diversity, not stochastic repeat variance."
+  ]
+}
